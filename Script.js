@@ -17,5 +17,5 @@ fetch("footer.html")
 fetch("newsletter.html")
 .then(response => response.text())
 .then(data => {
-    document.querySelector("section").innerHTML = data;
+    document.querySelector("main").innerHTML = data;
 })
