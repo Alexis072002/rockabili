@@ -1,69 +1,92 @@
-*{
+/* Reset CSS parametre */
+* {
     font-family: 'Zilla Slab', serif;
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-  }
-  
-  /* Start of the header css */
-  
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      position: static;
-  }
-  
-  .logoheader {
-      width: 100px;
-      height: 100px;
-      margin: 20px 20px 20px 20px;
-  }
-  
-  .navbar-link {
-      margin-left: 70px;
-      margin-right: 70px;
-      padding: 10px;
-      transition: transform 0.3s;
-      text-decoration: none;
-      font-size: larger;
-  }
-  
-  .navbar-link:hover {
-      transform: scale(1.1);
-      cursor: pointer;
-      background-color: #e22319;
-      color: white;
-      border-radius: 40px;
-  }
-  
-  .navbar-link.login {
-      margin-right: 30px;
-      margin-left: auto;
-      font-size: 2em;
-      margin-top: 5px;
-  }
-  
-  .navbar {
-      text-decoration: underline;
-  }
-  
-  .navbar:hover{
-      text-decoration-color: white ;
-  }
-  
-  /* End of header css */
-  
-  /* Start of the css for the Home page */
-  
-  .HomePage-Title {
-      text-align: center;
-      margin: 0;
-  }
-  
-  .RockabillyHomePage{
-      width: 500px;
-      height: 300px;
-  }
-  
+}
+
+/* Start of the header css*/
+
+.navbar a {
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: static;
+}
+
+.logoheader {
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 20px 20px;
+}
+
+.navbar-link {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.navbar-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #e22319;
+    color: white;
+    border-radius: 40px;
+}
+
+.navbar-link.login {
+    margin-right: 30px;
+    margin-left: auto;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.navbar {
+    text-decoration: underline;
+}
+
+.navbar:hover{
+    text-decoration-color: white ;
+}
+
+
+
+/* End of header css */
+
+/* Start of the css for the Home page */
+.title {
+    text-align: center;
+    padding: 50px;
+}
+
+.homepageFirstSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.RockabillyHomePage{
+    width: 500px;
+    height: 300px;
+    border-radius: 45px;
+    margin-right: 20px;
+    margin-left: 40px;
+    padding: 5px;
+    border: 2px solid black;
+    
+}
+
+.Homepage-text {
+margin-left: 5%;
+margin-right: 10%;
+font-size: larger;
+}
+
+
