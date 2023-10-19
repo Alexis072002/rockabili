@@ -1,0 +1,54 @@
+body {
+    margin : 0px;
+    padding : 0px;
+}
+
+
+
+footer {
+    background-color: black;
+    border: 1px solid black;
+    font-family: 'Zilla Slab', serif;
+    color: white;
+}
+
+footer h3{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social_media {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titre_media h4 {
+    margin-bottom: 10px
+}
+
+.icon_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon_media a {
+    color: white;
+    cursor: pointer;
+    padding: 0px 7px;
+}
+
+.icon_media a:hover {
+    color: white;
+    zoom: 104%;
+}
+
+.bottom_footer {
+    border-top: 1px solid gray;
+    margin-top: 30px ;
+    padding-top: 15px;
+}
