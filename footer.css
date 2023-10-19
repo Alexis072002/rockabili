@@ -1,18 +1,12 @@
-body {
-    margin : 0px;
-    padding : 0px;
-}
 
-
-
-footer {
+.footer_global{
     background-color: black;
-    border: 1px solid black;
     font-family: 'Zilla Slab', serif;
     color: white;
+    padding: 20px;
 }
 
-footer h3{
+.footer_global h3{
     font-size: 2rem;
     display: flex;
     flex-direction: row;
@@ -20,35 +14,51 @@ footer h3{
 }
 
 .social_media {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.titre_media h4 {
-    margin-bottom: 10px
-}
+/*                  ICON Social MÃ©dia                */
 
 .icon_media {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .icon_media a {
     color: white;
     cursor: pointer;
-    padding: 0px 7px;
+    padding: 0px 10px;
 }
 
 .icon_media a:hover {
     color: white;
-    zoom: 104%;
 }
+
+.fb_icon a:hover {
+    color: #3b5998;
+}
+
+.insta_icon a:hover {
+    color: #E1306C;
+}
+
+.ytb_icon a:hover {
+    color: #FF0000
+}
+
+/*               2eme partie du footer               */
 
 .bottom_footer {
     border-top: 1px solid gray;
     margin-top: 30px ;
     padding-top: 15px;
+    padding-left: 15px;
+}
+.copy_icon i{
+    font-size: 0.7rem;
 }

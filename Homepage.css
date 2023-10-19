@@ -1,43 +1,69 @@
-
-* {
+*{
     font-family: 'Zilla Slab', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    position: static;
-}
-
-.logoHeader {
-    width: 80px;
-    height: 80px;
-    margin: 20px 20px 20px 20px ;
-}
-
-.header-link {
-    margin-left: 5%;
-    padding: 10px;
-    transition: transform 0.3s;
-    border: 1px solid transparent;
-    text-decoration: none;
-    font-size: larger;
-}
-
-.header-link:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: #e22319;
-    color: white;
-    border-radius: 40px;
-}
-
-.HomePage-Title {
-    text-align: center; 
-    margin: 0; 
-}
+    /* box-sizing: border-box; */
+  }
+  
+  /* Start of the header css */
+  
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      position: static;
+  }
+  
+  .logoheader {
+      width: 100px;
+      height: 100px;
+      margin: 20px 20px 20px 20px;
+  }
+  
+  .navbar-link {
+      margin-left: 70px;
+      margin-right: 70px;
+      padding: 10px;
+      transition: transform 0.3s;
+      text-decoration: none;
+      font-size: larger;
+  }
+  
+  .navbar-link:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      background-color: #e22319;
+      color: white;
+      border-radius: 40px;
+  }
+  
+  .navbar-link.login {
+      margin-right: 30px;
+      margin-left: auto;
+      font-size: 2em;
+      margin-top: 5px;
+  }
+  
+  .navbar {
+      text-decoration: underline;
+  }
+  
+  .navbar:hover{
+      text-decoration-color: white ;
+  }
+  
+  /* End of header css */
+  
+  /* Start of the css for the Home page */
+  
+  .HomePage-Title {
+      text-align: center;
+      margin: 0;
+  }
+  
+  .RockabillyHomePage{
+      width: 500px;
+      height: 300px;
+  }
+  
