@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactforms.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="contact_forms">
-        <div class="forms">
-            <form action="mail.php" method="post">
-                <label for="name"> Nom - Prénom </label>
-                <input type="text" name="name" placeholder="Ex : Jean dupont...">
-
-                <label for="email"> Email </label>
-                <input type="email" name="email" placeholder="Ex : DupontJean01@gmail.com">
-
-                <label for="message">Message</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Écrivez votre message ici..."
-                style="height:200px"></textarea>
-                <input type="submit">
-            </form>
-        </div>
+    <div class="submit-form">
+        <!-- <h4 class="third-text text">Contactez moi</h4> -->
+        <form action="">
+            <div class="input-box">
+                <input type="text" class="input" required>
+                <label for="">Nom - Prénom</label>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input" required>
+                <label for="">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="tel" class="input" required>
+                <label for="">Téléphone</label>
+            </div>
+            <div class="input-box">
+                <textarea name="" class="input" required required cols="30" rows="10"></textarea>
+                <label for="">Message</label>
+            </div>
+            <input class="message" type="submit" value="submit">
+        </form>
     </div>
 </body>
+
 </html>
