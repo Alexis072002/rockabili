@@ -4,7 +4,7 @@ const script = document.createElement("script"),
 script.appendChild(text);
 document.body.appendChild(script);  
 
-fetch("homepage.html")
+fetch("Homepage.html")
 .then(response => response.text())
 .then(data => {
     document.querySelector("header").innerHTML = data;
