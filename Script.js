@@ -19,7 +19,7 @@ fetch("contactforms.html")
 .then(data => {
     document.querySelector("main").innerHTML = data;
 })
-fetch("benevole.html")
+fetch("benevoles.html")
 .then(response => response.text())
 .then(data => {
     document.querySelector ("section").innerHTML = data;

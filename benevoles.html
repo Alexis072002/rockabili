@@ -4,10 +4,22 @@
 <body>
 	
 		<h1>Benevoles</h1>
-        <div class="boxtarace">
+        <div id="benevoleList">
             <ul id="benevolesPrenom"></ul>
-            <ul id="benevolesTel"></ul>
         </div>
+
+    <form id="benevoleForm">
+        <label for="prenom">Prenom</label>
+        <input type="text" name="prenom" id="prenomBenevole" placeholder="Entrez votre prenom">
+
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nomBenevole" placeholder="Entrez votre nom">
+
+        <label for="tel">Téléphone</label>
+        <input type="text" name="telephone" id="telephoneBenevole" placeholder="Entrez votre telephone">
+    </form>
+
+    <button id="ajouterBenevole" type="button" onclick="addBenevoleToData()">Ajouter un bénévole</button>
 </body>
 <script src="benevoles.js"></script>
 </html>

@@ -1,60 +1,72 @@
+document.addEventListener('DOMContentLoaded', function() {
+    refreshBenevoleList()
+})
+
 const data = [
     {
         nom: "LaTortue",
         prenom: "Franklin",
-        description: "",
-        telephone:"0606060606"
+        telephone: "0606060606"
     },
     {
-        nom:"Lerat",
-        prenom:"Splinter",
-        description:"",
-        telephone:"0707070707"
-    }
-    ,{
-        nom:"Aubry",
-        prenom:"Martine",
-        description:"",
-        telephone:"0706070607"
-    },{
-        nom:"Tuile",
-        prenom:"Jean-Claudette",
-        description:"",
-        telephone:"0992099309"
+        nom: "Lerat",
+        prenom: "Splinter",
+        telephone: "0707070707"
+    },
+    {
+        nom: "Aubry",
+        prenom: "Martine",
+        telephone: "0706070607"
+    },
+    {
+        nom: "Tuile",
+        prenom: "Jean-Claudette",
+        telephone: "0992099309"
     }
 ]
-const button = document.querySelector('button');
 
 
-
-function supprime(i){
-    let index = String(i)
-  let deleteBenevole = document.getElementById(`benevole${index}`)
-      console.log(`benevole${i}`)
-    console.log(deleteBenevole)
-    deleteBenevole.remove();
+const refreshBenevoleList = () => {
+    const list = document.getElementById('benevolesPrenom')
+    while (list.firstChild) {
+        list.removeChild(list.firstChild)
+    }
+    data.forEach((element, index) => {
+        const buttonItem = document.createElement("button")
+        buttonItem.textContent = 'X'
+        buttonItem.onclick = () => updateBenevoleList('delete', index)
+        const listItem = document.createElement("li")
+        listItem.textContent = element.nom + " " + element.prenom + " " + element.telephone
+        list.appendChild(listItem)
+        listItem.appendChild(buttonItem)
+    } )
 }
 
-let benevolesList = document.getElementById("benevolesPrenom");
-for (i = 0 ; i < data.length; i++) {
-    console.log({i})
-    let index = Number(i)
-    let benevole = data[i];
-    let listItem = document.createElement("li");
-    let benevolePrenom = benevole.prenom
-    console.log(benevolePrenom)
-    let benevoleNom = benevole.nom
-    console.log(benevoleNom)
-    let benevoleTel = benevole.telephone
-    console.log(benevoleTel)
-    listItem.textContent = benevoleNom + " " + benevolePrenom + " - " + benevoleTel
-    listItem.id = "benevole" + index.toString();
-    let buttonItem = document.createElement("button");
-    buttonItem.textContent = "x"
-    buttonItem.onclick = () => supprime(index)
-    listItem.appendChild(buttonItem);
-    benevolesList.appendChild(listItem);
-    console.log(data[i].prenom)
-    console.log(i)
+const addBenevoleToData = () => {
+    const action = 'add'
+    const form = document.getElementById('benevoleForm')
+    let firstName = document.getElementById('prenomBenevole')
+    let lastName = document.getElementById('nomBenevole')
+    let phone = document.getElementById('telephoneBenevole')
+    
+    const input = {
+        nom: lastName.value,
+        prenom: firstName.value,
+        telephone: phone.value
+    }
+    
+    updateBenevoleList(action, input)
 }
- 
+
+const updateBenevoleList = (action, item) => {
+    if (action == 'add') {
+        data.push(item)
+    }
+    else if (action == 'delete') {
+        data.splice(item, 1)
+    }
+    else {
+        console.log("pas d'action précisée")
+    }
+    refreshBenevoleList()
+}
