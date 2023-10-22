@@ -67,9 +67,11 @@
     padding: 50px;
 }
 
-.homepageFirstSection {
+.homepageFirstContent {
     display: flex;
     flex-direction: row;
+    background-color: red;
+    padding: 2%;
 }
 
 .RockabillyHomePage{
@@ -84,9 +86,47 @@
 }
 
 .Homepage-text {
-margin-left: 5%;
-margin-right: 10%;
-font-size: larger;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: larger;
 }
 
+.homepageSecondContent {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-top: 5%;
+    background-color: blue;
+}
+
+.RockabillyHomepageSecondImage {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 500px;
+    height: 300px;
+    border-radius: 45px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.homepageSecondText {
+    margin-left: 5%;
+    max-width: 50%;
+    font-size: larger;
+}
+
+.homepageSecondText {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.rockabillyFirstVideo{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 700px;
+    height: 350px;
+    margin-bottom: 100px;
+
+}
 
